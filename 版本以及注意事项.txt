@@ -1,0 +1,12 @@
+1.关闭电源管理，设置自动登录，免密登录以及关闭唤醒设置,连接好外网
+
+2.将解压后的uos-wdx-test-zq的目录放在uos用户的桌面，以root用户直接执行目录里的RunTest.sh
+
+3.如果跑LTP压测，最好先提前安装好以下所有的依赖包
+apt install autoconf make gcc build-essential sysstat make autoconf gcc libcap-dev libssl-dev libselinux1-dev libaio-dev libexplain-dev libacl1-dev libtirpc-dev freebsd-glue bison libkeyutils-dev libmm-dev libsctp-dev rsh-redone-server nfs-server -y
+
+4.本支持单工具运行，多工具批量测试，内核测试可以适当使用多工具批量测试（如是S3-S4-REBOOT），系统不要使用批量测试，有可能会漏过一些桌面上的问题。
+
+
+***********************版本v1****************************
+包含测试项目：S3,S4,REBOOT,LTP,文件读写，Trinity,Stressapptest,显卡
